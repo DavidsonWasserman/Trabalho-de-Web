@@ -147,10 +147,18 @@ h1 {
     font-family: Arial;
 }
 
+.t2 {
+    padding-left: 15%;
+    padding-bottom: 3%;
+    padding-right: 15%;
+    font-family: Arial;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     margin-left: 8%;
+    padding-left: 10%;
 }
 
 .card {
@@ -344,6 +352,7 @@ form textarea:focus {
 .img-fixa {
     height: 12vh;
     cursor: pointer;
+    padding-left: 15%;
 }
 
 #img-1 {
