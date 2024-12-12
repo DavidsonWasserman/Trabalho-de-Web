@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.card {
+    border: solid #b5b5b5 1px;
+    border-radius: 3px;
+    display: inline-block;
+    height: auto;
+    margin: 2% 2%;
+    padding: 15px;
+    width: 25%;
+}
+
+.container {
+    margin: 0 auto;
+    margin-left: 8%;
+    max-width: 1200px;
+    padding-left: 10%;
+}
+
+.content {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.datas {
+    background-clip: inherit;
+    background-color: #343a40;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 4px;
+}
+
+.footer-content {
+    align-items: center;
+    background: #0072ab;
+    color: white;
+    display: grid;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    height: 10%;
+    padding: 1%;
+    padding-left: 15%;
+    text-align: left;
+}
+
+.imagem {
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.img-fixa {
+    cursor: pointer;
+    height: 12vh;
+    padding-left: 15%;
+}
+
+#img-1 {
+    background-image: url('/img/rural_logo01.png');
+}
+
+#img-2 {
+    background-image: url('/img/rural_logo01.png');
+}
+
+#img-3 {
+    background-image: url('/img/rural_logo01.png');
+}
+
+.informacoes-1 {
+    font-size: 200%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    text-align: left;
+}
+
+.informacoes-2 {
+    font-size: 130%;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    text-align: left;
+}
+
+.informacoes-3 {
+    font-size: 100%;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    padding-top: 10%;
+    text-align: left;
+}
+
+.informacoes-4 {
+    font-size: 200%;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    text-align: left;
+}
+
+.informacoes-5 {
+    font-size: 100%;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding-top: 1%;
+    text-align: left;
+}
+
+.link-imagem {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-right: 3%;
+    width: 530px;
+}
+
+.logo {
+    font-size: 24px;
+    letter-spacing: 4px;
+    padding-left: 1%;
+    text-transform: uppercase;
+}
+
+.menu-items {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    left: -40%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 52px;
+    width: 200px;
+    z-index: 20;
+}
+
+.menu-items li a {
+    background-color: transparent;
+    color: black;
+    display: block;
+    padding: 10px 15px;
+    text-align: left;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.menu-items li a:hover {
+    background-color: #ccc;
+}
+
+.menu:hover .menu-items {
+    display: block;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    position: relative;
+}
+
+.nav-list li {
+    position: relative;
+}
+
+.nav-list li a {
+    color: #ffffff;
+    padding: 31px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-list li a.active {
+    background-color: #001b37;
+}
+
+.nomecurso {
+    color: #001b37;
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: auto;
+    padding-left: 200px;
+}
+
+.search-container {
+    align-items: center;
+    background-color: #b5b5b5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin-right: 80px;
+    width: 200px;
+}
+
+.search-container button {
+    background-color: #001b37;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+.search-container input {
+    background-color: #b5b5b5;
+    border: none;
+    flex: 1;
+    font-size: 16px;
+    outline: none;
+    padding-left: 1%;
+}
+
+.submenu-items {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    left: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 180px;
+    z-index: 30;
+}
+
+.submenu-items li a {
+    background-color: transparent;
+    color: black;
+    display: block;
+    padding: 10px 15px;
+    text-align: left;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.submenu-items li a:hover {
+    background-color: #ccc;
+}
+
+.submenu:hover .submenu-items {
+    display: block;
+}
+
+.titulo-card {
+    color: #333;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.top {
+    align-items: center;
+    background: #0072ab;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 12vh;
+    justify-content: space-between;
+    padding: 0 2%;
+    position: relative;
+    z-index: 10;
+}
+
+.undertop {
+    align-items: center;
+    background: #f4f4f4;
+    border-bottom: 1px solid #b5b5b5;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 12vh;
+    justify-content: space-between;
+    padding: 0 2%;
+}
